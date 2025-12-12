@@ -1,28 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(30.151% 0.09892 254.901);
-  --card: oklch(0.99 0 0);
-  --card-foreground: oklch(0.25 0.08 250);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.08 250);
-  --primary: oklch(0.45 0.15 250);
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.65 0.15 85);
-  --secondary-foreground: oklch(0.15 0.05 250);
-  --muted: oklch(0.96 0.005 250);
-  --muted-foreground: oklch(0.5 0.03 250);
-  --accent: oklch(0.55 0.18 290);
-  --accent-foreground: oklch(0.99 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.9 0.01 250);
-  --input: oklch(0.9 0.01 250);
-  --ring: oklch(0.45 0.15 250);
-  --radius: 0.625rem;
+  --background: #f7f2ed; /* marfil */
+  --foreground: #2d1a2f; /* morado profundo */
+  --card: #fdfbf7;
+  --card-foreground: #2d1a2f;
+  --popover: #f7f2ed;
+  --popover-foreground: #2d1a2f;
+  --primary: #6b3a6b; /* morado uva */
+  --primary-foreground: #f7f2ed;
+  --secondary: #8c1c32; /* vinotinto */
+  --secondary-foreground: #f7f2ed;
+  --muted: #bda9b5; /* texto suave */
+  --muted-foreground: #2d1a2f;
+  --accent: #c89b3c; /* dorado suave */
+  --accent-foreground: #2d1a2f;
+  --destructive: #8c1c32;
+  --destructive-foreground: #fefaf5;
+  --border: #e6d8c8;
+  --input: #e6d8c8;
+  --ring: #6b3a6b;
+  --radius: 0.875rem;
 }
 
 @theme inline {
@@ -46,7 +47,57 @@
   * {
     @apply border-border outline-none focus-visible:outline focus-visible:outline-[var(--ring)] focus-visible:outline-2;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    font-family: "Manrope", system-ui, -apple-system, sans-serif;
+    @apply bg-background text-foreground antialiased;
+    background: radial-gradient(
+      circle at 15% 20%,
+      #fbf7f2 0%,
+      #f7f2ed 34%,
+      #e9dcca 60%,
+      #f7f2ed 100%
+    );
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    letter-spacing: -0.02em;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .delay-1 {
+    transition-delay: 0.1s;
+  }
+  .delay-2 {
+    transition-delay: 0.2s;
+  }
+  .delay-3 {
+    transition-delay: 0.3s;
+  }
+
+  .soft-float {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .soft-float:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
   }
 }

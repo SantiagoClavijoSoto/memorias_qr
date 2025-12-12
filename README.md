@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# Memorias Eternas QR – Landing React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page para presentar el servicio de placas con código QR y perfil conmemorativo.
 
-Currently, two official plugins are available:
+## Stack
+- React + TypeScript + Vite
+- Tailwind (via `@apply` en `src/index.css`)
+- React Router (sólo para smooth scroll y estructura)
+- lucide-react e iconos de redes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Estructura rápida
+- `src/main.tsx`: monta `RootLayout` + `HomePage`.
+- `src/pages/HomePage.tsx`: página completa (hero, destacados, cómo funciona, cierre).
+- `src/index.css`: paleta, fuentes y estilos base.
+- `src/components/ui/button.tsx` y `card`: UI mínima.
+- `public/`: assets estáticos (logo, fondo, video).
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Configuración y scripts
+1) Instalar dependencias:
+```bash
+npm install
+```
+2) Desarrollo:
+```bash
+npm run dev -- --host 127.0.0.1 --port 3000
+```
+3) Build estático:
+```bash
+npm run build
+```
+4) Preview del build:
+```bash
+npm run preview -- --host 127.0.0.1 --port 4173
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Personalización
+- Textos y enlaces de contacto/redes: editar `src/pages/HomePage.tsx` (botones de WhatsApp y redes).
+- Paleta y gradientes: `src/index.css` (`:root` variables y fondo radial).
+- CTA/buttons: `src/components/ui/button.tsx`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Notas del diseño actual
+- Paleta cálida vinotinto/dorado con gradientes y neomorfismo suave en cards.
+- Animaciones de entrada con IntersectionObserver (`.reveal`) y suavizado al hover (`.soft-float`).
+- Hero con fondo degradado y CTA a WhatsApp, bloque “Cómo funciona” con video incrustado y cards informativas.
