@@ -8,7 +8,7 @@ export const primaryHighlights: HighlightItem[] = [
   {
     icon: <QrCode className="h-6 w-6 text-primary" />,
     title: "Código QR personalizado",
-    desc: "Placa de acero inoxidable 6x6 con QR único que abre el perfil conmemorativo editado por la familia.",
+    desc: "Placa de acero inoxidable 6x6 con tu QR impreso que direcciona al perfil personalizado de tu ser querido, con la información que tú edites.",
     tone: "from-white to-[#f7f2ed]",
   },
   {
