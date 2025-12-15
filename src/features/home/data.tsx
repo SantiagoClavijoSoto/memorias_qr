@@ -14,7 +14,7 @@ export const primaryHighlights: HighlightItem[] = [
   {
     icon: <Heart className="h-6 w-6 text-secondary" />,
     title: "Perfil conmemorativo",
-    desc: "Historia, fotos, videos, canciones y relatos en un espacio seguro y bello.",
+    desc: "Podrás contar la historia y los momentos especiales de tu ser querido por medio de fotos, videos, biografía, canciones, relatos y vivencias.",
     tone: "from-white to-[#e9dcca]/75",
   },
   {
