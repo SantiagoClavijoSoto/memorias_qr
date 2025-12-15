@@ -46,18 +46,33 @@ export const collaborationCards: InfoCard[] = [
 export const steps: StepItem[] = [
   {
     step: "1",
-    title: "Adquiere tu código QR",
-    desc: "Escríbenos, resolvemos dudas y recibimos los datos básicos para preparar tu placa.",
+    title: "Nos escribes",
+    desc: "Nuestro equipo estará atento para explicarte y despejar dudas.",
   },
   {
     step: "2",
-    title: "Construye el perfil",
-    desc: "Envía fotos, videos, biografía y música. Puedes editar y actualizar cuando quieras.",
+    title: "Datos básicos",
+    desc: "Nos suministras nombre, teléfono, dirección y correo.",
   },
   {
     step: "3",
-    title: "Comparte y recuerda",
-    desc: "Instala la placa, comparte el QR y permite que familia y amigos dejen mensajes con reacciones.",
+    title: "Genera tu contraseña",
+    desc: "Te enviaremos un correo con un link para crear una contraseña segura.",
+  },
+  {
+    step: "4",
+    title: "Activamos tu QR",
+    desc: "Con la contraseña creada, activamos tu código QR.",
+  },
+  {
+    step: "5",
+    title: "Acceso editable",
+    desc: "Recibirás un segundo correo para ingresar con tu contraseña a la parte editable del perfil.",
+  },
+  {
+    step: "6",
+    title: "Envío sin costo",
+    desc: "Te enviamos tu placa con el QR a domicilio, sin costo adicional.",
   },
 ];
 
