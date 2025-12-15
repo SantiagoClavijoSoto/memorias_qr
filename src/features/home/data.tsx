@@ -29,7 +29,7 @@ export const collaborationCards: InfoCard[] = [
   {
     icon: <Users className="h-5 w-5 text-primary" />,
     title: "Espacio colaborativo",
-    desc: "Comparte el QR y recibe mensajes de amor con opción de reacciones.",
+    desc: "Podrás compartir con amigos y seres queridos el QR de manera inmediata y segura; también podrán dejar mensajes de amor y gratitud a tu ser querido, estos mensajes tienen la opción de reaccionar con like.",
   },
   {
     icon: <Camera className="h-5 w-5 text-secondary" />,
