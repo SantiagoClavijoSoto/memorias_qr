@@ -34,7 +34,7 @@ export const collaborationCards: InfoCard[] = [
   {
     icon: <Camera className="h-5 w-5 text-secondary" />,
     title: "Multimedia completo",
-    desc: "Fotos ilimitadas y video/música gestionados por YouTube. Melodía de fondo al visitar.",
+    desc: "Al interactuar con el perfil te acompañará una hermosa melodía; podrás subir fotos ilimitadas y los videos y canciones se subirán por medio de nuestro canal de YouTube.",
   },
   {
     icon: <Sparkles className="h-5 w-5 text-accent-foreground" />,
