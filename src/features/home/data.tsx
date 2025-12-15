@@ -39,7 +39,7 @@ export const collaborationCards: InfoCard[] = [
   {
     icon: <Sparkles className="h-5 w-5 text-accent-foreground" />,
     title: "Para siempre",
-    desc: "Pago único. Sin mensualidades ni mantenimientos. Envío a domicilio incluido.",
+    desc: "Nuestro QR es único y vitalicio: no tendrás que pagar mensualidades ni mantenimientos; con un único pago te enviaremos tu placa a domicilio y para siempre.",
   },
 ];
 
