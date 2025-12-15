@@ -1,5 +1,6 @@
 import React from "react";
 import { Sparkles } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { Button } from "../../../components/ui/button";
 import { Card, CardContent } from "../../../components/ui/card";
 import { includesList, socialLinks } from "../data";
@@ -20,7 +21,12 @@ const ClosingSection: React.FC = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg">Hablar por WhatsApp</Button>
+              <Button size="lg">
+                <span className="inline-flex items-center gap-2">
+                  <FaWhatsapp className="h-5 w-5" />
+                  Hablar por WhatsApp
+                </span>
+              </Button>
             </a>
             {socialLinks.map((social) => (
               <a
