@@ -9,19 +9,19 @@ export const primaryHighlights: HighlightItem[] = [
     icon: <QrCode className="h-6 w-6 text-primary" />,
     title: "Código QR personalizado",
     desc: "Placa de acero inoxidable 6x6 con tu QR impreso que direcciona al perfil personalizado de tu ser querido, con la información que tú edites.",
-    tone: "from-white to-[#f7f2ed]",
+    tone: "from-white to-[#e6eef9]",
   },
   {
     icon: <Heart className="h-6 w-6 text-secondary" />,
     title: "Perfil conmemorativo",
     desc: "Podrás contar la historia y los momentos especiales de tu ser querido por medio de fotos, videos, biografía, canciones, relatos y vivencias.",
-    tone: "from-white to-[#e9dcca]/75",
+    tone: "from-white to-[#f7f0dd]",
   },
   {
     icon: <Shield className="h-6 w-6 text-foreground" />,
     title: "Control total",
     desc: "Usuario y contraseña para actualizar el perfil cuando lo desees.",
-    tone: "from-white to-[#bda9b5]/65",
+    tone: "from-white to-[#dfeaf5]/75",
   },
 ];
 
@@ -85,17 +85,17 @@ export const includesList = [
 
 export const socialLinks: SocialLink[] = [
   {
-    href: "https://www.facebook.com/share/14npzP1jYq/",
+    href: "https://www.facebook.com/profile.php?id=61581062348783",
     label: "Facebook",
     icon: <FaFacebook className="h-4 w-4" />,
   },
   {
-    href: "https://www.instagram.com/memorias_terna/",
+    href: "https://www.instagram.com/recuerdos.eternos_qr/?utm_source=ig_web_button_share_sheet",
     label: "Instagram",
     icon: <FaInstagram className="h-4 w-4" />,
   },
   {
-    href: "https://www.tiktok.com/@memoriasternasqr",
+    href: "https://www.tiktok.com/@recuerdos_eternos.qr?is_from_webapp=1&sender_device=pc",
     label: "TikTok",
     icon: <FaTiktok className="h-4 w-4" />,
   },

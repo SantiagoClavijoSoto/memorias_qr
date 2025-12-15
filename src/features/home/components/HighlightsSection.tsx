@@ -18,7 +18,7 @@ const HighlightsSection: React.FC = () => (
         {primaryHighlights.map((item, idx) => (
           <Card
             key={idx}
-            className="border-none bg-gradient-to-br shadow-xl shadow-[rgba(200,155,60,0.2)] reveal soft-float"
+            className="border-none bg-gradient-to-br shadow-xl shadow-[rgba(244,180,26,0.2)] reveal soft-float"
           >
             <CardContent className={`p-6 md:p-7 rounded-2xl bg-gradient-to-br ${item.tone}`}>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white shadow-inner shadow-[rgba(200,155,60,0.24)]">
@@ -37,7 +37,7 @@ const HighlightsSection: React.FC = () => (
         {collaborationCards.map((item, idx) => (
           <Card
             key={idx}
-            className="border border-border/70 bg-card/80 backdrop-blur shadow-lg shadow-[rgba(109,58,107,0.18)] reveal soft-float"
+            className="border border-border/70 bg-card/80 backdrop-blur shadow-lg shadow-[rgba(29,78,216,0.18)] reveal soft-float"
           >
             <CardContent className="p-6 space-y-3">
               <div className="h-11 w-11 rounded-xl bg-primary/10 flex items-center justify-center">

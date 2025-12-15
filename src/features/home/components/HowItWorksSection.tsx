@@ -5,8 +5,8 @@ import { fondoo, steps } from "../data";
 
 const HowItWorksSection: React.FC = () => (
   <section id="como-funciona" className="relative overflow-hidden py-14 md:py-20">
-    <div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed]/80 via-white to-[#e9dcca]/75" />
-    <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#c89b3c]/22 to-transparent" />
+    <div className="absolute inset-0 bg-gradient-to-r from-[#edf3fc]/85 via-white to-[#e6f0fb]/80" />
+    <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#f4b41a]/18 to-transparent" />
 
     <div className="relative container mx-auto px-4 grid gap-10 md:grid-cols-[1.05fr_0.95fr] items-center">
       <div className="space-y-3">

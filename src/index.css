@@ -4,25 +4,25 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #f7f2ed; /* marfil */
-  --foreground: #2d1a2f; /* morado profundo */
-  --card: #fdfbf7;
-  --card-foreground: #2d1a2f;
-  --popover: #f7f2ed;
-  --popover-foreground: #2d1a2f;
-  --primary: #6b3a6b; /* morado uva */
-  --primary-foreground: #f7f2ed;
-  --secondary: #8c1c32; /* vinotinto */
-  --secondary-foreground: #f7f2ed;
-  --muted: #bda9b5; /* texto suave */
-  --muted-foreground: #2d1a2f;
-  --accent: #c89b3c; /* dorado suave */
-  --accent-foreground: #2d1a2f;
-  --destructive: #8c1c32;
-  --destructive-foreground: #fefaf5;
-  --border: #e6d8c8;
-  --input: #e6d8c8;
-  --ring: #6b3a6b;
+  --background: #eef4fb; /* azul muy claro */
+  --foreground: #0f172a; /* azul profundo */
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #eef4fb;
+  --popover-foreground: #0f172a;
+  --primary: #1d4ed8; /* azul vivo */
+  --primary-foreground: #f8fafc;
+  --secondary: #0f9d8c; /* verde-teal suave (toque mínimo) */
+  --secondary-foreground: #f8fafc;
+  --muted: #9fb3c8; /* texto suave */
+  --muted-foreground: #0f172a;
+  --accent: #f4b41a; /* dorado */
+  --accent-foreground: #0f172a;
+  --destructive: #f97316; /* naranja suave */
+  --destructive-foreground: #fff7ed;
+  --border: #d6e2f3;
+  --input: #d6e2f3;
+  --ring: #1d4ed8;
   --radius: 0.875rem;
 }
 
@@ -57,10 +57,10 @@
     @apply bg-background text-foreground antialiased;
     background: radial-gradient(
       circle at 15% 20%,
-      #fbf7f2 0%,
-      #f7f2ed 34%,
-      #e9dcca 60%,
-      #f7f2ed 100%
+      #f5f9ff 0%,
+      #eef4fb 34%,
+      #e3edfb 60%,
+      #eef4fb 100%
     );
   }
 

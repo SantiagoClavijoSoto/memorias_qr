@@ -11,11 +11,11 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
   <section
-    className="relative isolate overflow-hidden bg-gradient-to-br from-[#6b3a6b] via-[#8c1c32] to-[#2d1a2f] py-16 md:py-24"
+    className="relative isolate overflow-hidden bg-gradient-to-br from-[#0e2f5f] via-[#1d4ed8] to-[#0b1f3d] py-16 md:py-24"
     aria-label="Memorias Eternas QR"
   >
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.25),transparent_35%),radial-gradient(circle_at_80%_40%,rgba(255,255,255,0.2),transparent_30%)]" />
-    <div className="absolute inset-0 bg-black/5" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.24),transparent_35%),radial-gradient(circle_at_80%_40%,rgba(255,255,255,0.18),transparent_30%)]" />
+    <div className="absolute inset-0 bg-black/10" />
 
     <div className="container mx-auto px-4 relative z-10">
       <header className="flex flex-col gap-6 text-center md:text-left md:flex-row md:items-center md:justify-between">

@@ -42,7 +42,7 @@ const ClosingSection: React.FC = () => (
           </div>
         </div>
 
-        <Card className="border border-border/70 bg-card/90 backdrop-blur shadow-xl shadow-[rgba(200,155,60,0.2)] reveal delay-1 soft-float">
+        <Card className="border border-border/70 bg-card/90 backdrop-blur shadow-xl shadow-[rgba(244,180,26,0.2)] reveal delay-1 soft-float">
           <CardContent className="p-6 md:p-8 space-y-4">
             <div className="flex items-center gap-3">
               <Sparkles className="h-5 w-5 text-primary" />
