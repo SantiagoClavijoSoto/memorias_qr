@@ -50,6 +50,7 @@ const HowItWorksSection: React.FC = () => (
           <video
             className="h-full w-full object-cover"
             src={howDoesItWork}
+            title="Cómo funciona una placa QR conmemorativa de Memorias Eternas QR"
             controls
             muted
             loop

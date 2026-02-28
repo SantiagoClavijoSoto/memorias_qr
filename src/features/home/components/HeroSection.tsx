@@ -26,7 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
         <div className="flex items-center justify-center md:justify-start gap-3">
           <img
             src={logo}
-            alt="Logo de Memorias Eternas QR"
+            alt="Memorias Eternas QR - Placas QR conmemorativas Colombia"
             className="h-14 w-14 rounded-xl shadow-lg shadow-black/20"
           />
           <div className="text-left text-white">
@@ -41,12 +41,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
       <div className="mt-10 grid gap-10 md:grid-cols-[1.1fr_0.9fr] items-center">
         <div className="text-white space-y-6 reveal">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            Un tributo cálido que trasciende el tiempo
+            Placas QR conmemorativas para recordar a tus seres queridos
           </h1>
           <p className="text-lg md:text-xl max-w-2xl text-white/90">
-            Crea un perfil conmemorativo digital con fotos, videos, biografía, música y
-            mensajes de gratitud. Una placa QR en acero que conecta el recuerdo físico con
-            un tributo digital eterno.
+            Crea un memorial digital con fotos, videos, biografía y música.
+            Una placa en acero inoxidable con código QR que conecta el recuerdo físico
+            con un tributo digital eterno. Envíos a toda Colombia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
