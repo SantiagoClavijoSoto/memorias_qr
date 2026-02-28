@@ -1,8 +1,7 @@
 import React from "react";
 import { Heart } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa6";
-import { Button } from "../../../components/ui/button";
 import { socialLinks } from "../data";
+import WhatsAppButton from "./WhatsAppButton";
 
 const ClosingSection: React.FC = () => (
   <section className="relative overflow-hidden py-16 md:py-24">
@@ -21,21 +20,10 @@ const ClosingSection: React.FC = () => (
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 reveal delay-1">
-        <a
-          href="https://wa.me/573212564417?text=Hola%20quiero%20saber%20m%C3%A1s%20sobre%20Memorias%20Eternas%20QR"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button
-            size="lg"
-            className="bg-white text-[#0e2f5f] hover:bg-white/90 shadow-xl shadow-black/20 text-lg px-10 py-5"
-          >
-            <span className="inline-flex items-center gap-2">
-              <FaWhatsapp className="h-6 w-6" />
-              Escríbenos por WhatsApp
-            </span>
-          </Button>
-        </a>
+        <WhatsAppButton
+          className="bg-white text-[#0e2f5f] hover:bg-white/90 shadow-xl shadow-black/20 text-lg px-10 py-5"
+          label="Escríbenos por WhatsApp"
+        />
       </div>
 
       <div className="flex items-center justify-center gap-4 reveal delay-2">

@@ -1,9 +1,8 @@
 import React from "react";
 import { ChevronDown, Sparkles } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa6";
 import logo from "../../../assets/Logob.webp";
-import { Button } from "../../../components/ui/button";
 import { fondoo } from "../data";
+import WhatsAppButton from "./WhatsAppButton";
 
 interface HeroSectionProps {
   onScrollTo: (sectionId: string) => (event: React.MouseEvent<HTMLAnchorElement>) => void;
@@ -49,21 +48,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
             con un tributo digital eterno. Envíos a toda Colombia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://wa.me/573212564417?text=Hola%20quiero%20saber%20m%C3%A1s%20sobre%20Memorias%20Eternas%20QR"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                className="bg-white text-[#0e2f5f] hover:bg-white/90 shadow-xl shadow-black/20"
-              >
-                <span className="inline-flex items-center gap-2">
-                  <FaWhatsapp className="h-5 w-5" />
-                  Consulta con nuestros asesores
-                </span>
-              </Button>
-            </a>
+            <WhatsAppButton
+              className="bg-white text-[#0e2f5f] hover:bg-white/90 shadow-xl shadow-black/20"
+            />
             <a
               href="#tipos-perfil"
               onClick={onScrollTo("tipos-perfil")}
