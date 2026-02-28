@@ -4,19 +4,36 @@ export interface HighlightItem {
   icon: ReactElement;
   title: string;
   desc: string;
-  tone: string;
 }
 
-export interface InfoCard {
+export interface ProfileType {
   icon: ReactElement;
-  title: string;
-  desc: string;
+  name: string;
+  description: string;
+  color: string;
 }
 
 export interface StepItem {
   step: string;
   title: string;
   desc: string;
+  icon: ReactElement;
+}
+
+export interface Testimonial {
+  name: string;
+  text: string;
+  rating: number;
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface UpdateItem {
+  icon: ReactElement;
+  text: string;
 }
 
 export interface SocialLink {

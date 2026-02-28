@@ -1,102 +1,241 @@
-import { Camera, Heart, QrCode, Shield, Sparkles, Users } from "lucide-react";
+import {
+  BookOpen,
+  Camera,
+
+  Dog,
+  Heart,
+  Image,
+  LayoutGrid,
+  MapPin,
+  MessageCircle,
+  Music,
+  Phone,
+  RefreshCw,
+  Send,
+  Shield,
+  Sparkles,
+  Star,
+  TreePine,
+  Users,
+  Video,
+} from "lucide-react";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
-import type { InfoCard, HighlightItem, SocialLink, StepItem } from "./types";
+import type {
+  FAQItem,
+  HighlightItem,
+  ProfileType,
+  SocialLink,
+  StepItem,
+  Testimonial,
+  UpdateItem,
+} from "./types";
 
 export const fondoo = "/fondoo.webp";
 
-export const primaryHighlights: HighlightItem[] = [
+export const profileTypes: ProfileType[] = [
   {
-    icon: <QrCode className="h-6 w-6 text-primary" />,
-    title: "Código QR personalizado",
-    desc: "Placa de acero inoxidable 6x6 con tu QR impreso que direcciona al perfil personalizado de tu ser querido, con la información que tú edites.",
-    tone: "from-white to-[#e6eef9]",
+    icon: <Heart className="h-7 w-7" />,
+    name: "Genérico",
+    description: "Para cualquier ser querido",
+    color: "text-primary",
   },
   {
-    icon: <Heart className="h-6 w-6 text-secondary" />,
-    title: "Perfil conmemorativo",
-    desc: "Podrás contar la historia y los momentos especiales de tu ser querido por medio de fotos, videos, biografía, canciones, relatos y vivencias.",
-    tone: "from-white to-[#e6eef9]",
+    icon: <Users className="h-7 w-7" />,
+    name: "Hombre",
+    description: "Perfil masculino personalizado",
+    color: "text-blue-600",
   },
   {
-    icon: <Shield className="h-6 w-6 text-foreground" />,
-    title: "Control total",
-    desc: "Usuario y contraseña para actualizar el perfil cuando lo desees.",
-    tone: "from-white to-[#dfeaf5]/75",
+    icon: <Sparkles className="h-7 w-7" />,
+    name: "Mujer",
+    description: "Perfil femenino personalizado",
+    color: "text-pink-500",
+  },
+  {
+    icon: <Star className="h-7 w-7" />,
+    name: "Niño",
+    description: "Tributo para niños",
+    color: "text-sky-500",
+  },
+  {
+    icon: <Star className="h-7 w-7" />,
+    name: "Niña",
+    description: "Tributo para niñas",
+    color: "text-rose-400",
+  },
+  {
+    icon: <Shield className="h-7 w-7" />,
+    name: "Militar",
+    description: "Con rama de las Fuerzas Armadas",
+    color: "text-emerald-600",
+  },
+  {
+    icon: <Dog className="h-7 w-7" />,
+    name: "Mascotas",
+    description: "Para compañeros de vida",
+    color: "text-amber-500",
   },
 ];
 
-export const collaborationCards: InfoCard[] = [
+export const highlights: HighlightItem[] = [
   {
-    icon: <Users className="h-5 w-5 text-primary" />,
-    title: "Espacio colaborativo",
-    desc: "Podrás compartir con amigos y seres queridos el QR de manera inmediata y segura; también podrán dejar mensajes de amor y gratitud a tu ser querido, estos mensajes tienen la opción de reaccionar con like.",
+    icon: <BookOpen className="h-6 w-6 text-primary" />,
+    title: "Biografía y momentos especiales",
+    desc: "Editor de texto enriquecido para contar su historia",
   },
   {
-    icon: <Camera className="h-5 w-5 text-secondary" />,
-    title: "Multimedia completo",
-    desc: "Al interactuar con el perfil te acompañará una hermosa melodía; podrás subir fotos ilimitadas y los videos y canciones se subirán por medio de nuestro canal de YouTube.",
+    icon: <Image className="h-6 w-6 text-primary" />,
+    title: "Galería de fotos",
+    desc: "Sube hasta 10 fotos especiales de tu ser querido",
   },
   {
-    icon: <Sparkles className="h-5 w-5 text-accent-foreground" />,
-    title: "Para siempre",
-    desc: "Nuestro QR es único y vitalicio: no tendrás que pagar mensualidades ni mantenimientos; con un único pago te enviaremos tu placa a domicilio y para siempre.",
+    icon: <Video className="h-6 w-6 text-primary" />,
+    title: "Videos desde YouTube y dispositivo",
+    desc: "Comparte los videos más significativos",
+  },
+  {
+    icon: <Music className="h-6 w-6 text-primary" />,
+    title: "Música y canciones favoritas",
+    desc: "Agrega las canciones que marcaron su vida",
+  },
+  {
+    icon: <TreePine className="h-6 w-6 text-primary" />,
+    title: "Árbol familiar con fotos",
+    desc: "Conecta generaciones con un árbol visual",
+  },
+  {
+    icon: <MessageCircle className="h-6 w-6 text-primary" />,
+    title: "Mensajes y tributos públicos",
+    desc: "Amigos y familia dejan mensajes con reacciones",
+  },
+  {
+    icon: <MapPin className="h-6 w-6 text-primary" />,
+    title: "Ubicación del cementerio",
+    desc: "Mapa interactivo con Google Maps integrado",
+  },
+  {
+    icon: <Music className="h-6 w-6 text-primary" />,
+    title: "Melodía ambiental personalizable",
+    desc: "Una melodía que acompaña la visita al perfil",
   },
 ];
 
 export const steps: StepItem[] = [
   {
     step: "1",
-    title: "Nos escribes",
-    desc: "Nuestro equipo estará atento para explicarte y despejar dudas.",
+    title: "Contáctanos",
+    desc: "Escríbenos por WhatsApp para resolver tus dudas",
+    icon: <Phone className="h-6 w-6" />,
   },
   {
     step: "2",
-    title: "Datos básicos",
-    desc: "Nos suministras nombre, teléfono, dirección y correo.",
+    title: "Creamos tu perfil",
+    desc: "Activamos tu QR y te damos acceso a tu panel",
+    icon: <LayoutGrid className="h-6 w-6" />,
   },
   {
     step: "3",
-    title: "Genera tu contraseña",
-    desc: "Te enviaremos un correo con un link para crear una contraseña segura.",
+    title: "Personaliza",
+    desc: "Sube fotos, videos, biografía y mucho más",
+    icon: <Camera className="h-6 w-6" />,
   },
   {
     step: "4",
-    title: "Activamos tu QR",
-    desc: "Con la contraseña creada, activamos tu código QR.",
-  },
-  {
-    step: "5",
-    title: "Acceso editable",
-    desc: "Recibirás un segundo correo para ingresar con tu contraseña a la parte editable del perfil.",
-  },
-  {
-    step: "6",
-    title: "Envío sin costo",
-    desc: "Te enviamos tu placa con el QR a domicilio, sin costo adicional.",
+    title: "Recibe tu placa",
+    desc: "Envío a domicilio sin costo adicional",
+    icon: <Send className="h-6 w-6" />,
   },
 ];
 
-export const includesList = [
-  "Placa en acero 6x6 con QR personalizado y vitalicio.",
-  "Perfil administrable: fotos, videos, biografía, canciones, relatos y mensajes con reacciones.",
-  "Acceso privado para la familia y enlaces para compartir con amigos.",
-  "Acompañamiento para configurar el perfil y soporte continuo.",
+export const updates: UpdateItem[] = [
+  {
+    icon: <LayoutGrid className="h-5 w-5 text-primary" />,
+    text: "Nuevos diseños de perfiles periódicamente",
+  },
+  {
+    icon: <Shield className="h-5 w-5 text-primary" />,
+    text: "Mejoras de rendimiento y seguridad",
+  },
+  {
+    icon: <Users className="h-5 w-5 text-primary" />,
+    text: "Funciones solicitadas por la comunidad",
+  },
+  {
+    icon: <RefreshCw className="h-5 w-5 text-primary" />,
+    text: "Soporte técnico continuo",
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "María García",
+    text: "Crear el perfil de mi padre fue una experiencia sanadora. Toda la familia puede visitarlo y dejar mensajes. Es hermoso ver cómo sus amigos también escriben recuerdos.",
+    rating: 5,
+  },
+  {
+    name: "Carlos Rodríguez",
+    text: "La placa QR quedó preciosa en la lápida. Cada vez que vamos, escaneamos y revivimos los mejores momentos juntos. Una forma moderna de mantener viva su memoria.",
+    rating: 5,
+  },
+  {
+    name: "Ana Martínez",
+    text: "Lo usé para mi mascota que me acompañó 15 años. El perfil tiene todas sus fotos y hasta la canción que le ponía. Es un tributo que trasciende.",
+    rating: 5,
+  },
+];
+
+export const faqs: FAQItem[] = [
+  {
+    question: "¿Qué es Memorias Eternas QR?",
+    answer:
+      "Es una placa de acero inoxidable con un código QR grabado que, al escanearlo, abre un perfil digital conmemorativo con fotos, videos, biografía, música y mensajes de gratitud para honrar la memoria de tu ser querido.",
+  },
+  {
+    question: "¿Cómo funciona el código QR?",
+    answer:
+      "El QR se escanea con la cámara de cualquier celular. Al escanearlo, se abre automáticamente el perfil conmemorativo en el navegador, sin necesidad de instalar ninguna aplicación.",
+  },
+  {
+    question: "¿Puedo editar el perfil después?",
+    answer:
+      "Sí, tienes acceso permanente con usuario y contraseña para actualizar el perfil cuando lo desees: agregar fotos, videos, cambiar la biografía, actualizar la música y más.",
+  },
+  {
+    question: "¿Es un pago único o hay mensualidades?",
+    answer:
+      "Es un pago único. No hay mensualidades, mantenimientos ni costos ocultos. Tu perfil y placa QR son vitalicios.",
+  },
+  {
+    question: "¿Cómo recibo mi placa?",
+    answer:
+      "La placa se envía a domicilio sin costo adicional a cualquier parte de Colombia. Recibirás tu placa en acero inoxidable 5x5 cm lista para instalar.",
+  },
+  {
+    question: "¿Pueden dejar mensajes otras personas?",
+    answer:
+      "Sí, cualquier persona que visite el perfil puede dejar mensajes de amor y gratitud. Estos mensajes también tienen la opción de recibir reacciones de otros visitantes.",
+  },
+  {
+    question: "¿Funciona para mascotas?",
+    answer:
+      "Sí, tenemos un tipo de perfil especial para mascotas. Puedes crear un tributo completo con fotos, videos y recuerdos de tu compañero de vida.",
+  },
 ];
 
 export const socialLinks: SocialLink[] = [
   {
     href: "https://www.facebook.com/profile.php?id=61581062348783",
     label: "Facebook",
-    icon: <FaFacebook className="h-4 w-4" />,
+    icon: <FaFacebook className="h-5 w-5" />,
   },
   {
     href: "https://www.instagram.com/recuerdos.eternos_qr/?utm_source=ig_web_button_share_sheet",
     label: "Instagram",
-    icon: <FaInstagram className="h-4 w-4" />,
+    icon: <FaInstagram className="h-5 w-5" />,
   },
   {
     href: "https://www.tiktok.com/@recuerdos_eternos.qr?is_from_webapp=1&sender_device=pc",
     label: "TikTok",
-    icon: <FaTiktok className="h-4 w-4" />,
+    icon: <FaTiktok className="h-5 w-5" />,
   },
 ];

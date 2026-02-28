@@ -1,5 +1,5 @@
 import React from "react";
-import { Sparkles } from "lucide-react";
+import { ChevronDown, Sparkles } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 import logo from "../../../assets/Logob.webp";
 import { Button } from "../../../components/ui/button";
@@ -44,9 +44,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
             Un tributo cálido que trasciende el tiempo
           </h1>
           <p className="text-lg md:text-xl max-w-2xl text-white/90">
-            Un código QR en acero que abre un perfil digital con fotos, videos, biografía, música y
-            mensajes de gratitud. Un lugar seguro para honrar y compartir la historia de quienes
-            amamos.
+            Crea un perfil conmemorativo digital con fotos, videos, biografía, música y
+            mensajes de gratitud. Una placa QR en acero que conecta el recuerdo físico con
+            un tributo digital eterno.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -56,7 +56,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
             >
               <Button
                 size="lg"
-                className="bg-white text-[#6b3a6b] hover:bg-white/90 shadow-xl shadow-black/20"
+                className="bg-white text-[#0e2f5f] hover:bg-white/90 shadow-xl shadow-black/20"
               >
                 <span className="inline-flex items-center gap-2">
                   <FaWhatsapp className="h-5 w-5" />
@@ -65,23 +65,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
               </Button>
             </a>
             <a
-              href="#como-funciona"
-              onClick={onScrollTo("como-funciona")}
-              className="inline-flex items-center justify-center rounded-xl border border-white/50 px-6 py-3 text-white hover:bg-white/10"
+              href="#tipos-perfil"
+              onClick={onScrollTo("tipos-perfil")}
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/50 px-6 py-3 text-white hover:bg-white/10 transition-colors"
             >
-              Ver cómo funciona
+              Descubre más
+              <ChevronDown className="h-4 w-4" />
             </a>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-white/85">
-            <div className="rounded-xl bg-white/10 p-3 shadow-inner shadow-black/10">
-              Placa en acero 6x6 con QR único y vitalicio.
-            </div>
-            <div className="rounded-xl bg-white/10 p-3 shadow-inner shadow-black/10">
-              Perfil con fotos, videos, biografía y canciones.
-            </div>
-            <div className="rounded-xl bg-white/10 p-3 shadow-inner shadow-black/10">
-              Acceso seguro para familia y mensajes con reacciones.
-            </div>
           </div>
         </div>
 
@@ -111,6 +101,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 reveal delay-2">
+        <div className="flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur px-5 py-4 text-white">
+          <span className="text-2xl font-bold text-accent">7</span>
+          <span className="text-sm text-white/85">tipos de perfil disponibles</span>
+        </div>
+        <div className="flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur px-5 py-4 text-white">
+          <span className="text-2xl font-bold text-accent">∞</span>
+          <span className="text-sm text-white/85">fotos, videos y música sin límite</span>
+        </div>
+        <div className="flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur px-5 py-4 text-white">
+          <span className="text-2xl font-bold text-accent">0</span>
+          <span className="text-sm text-white/85">mensualidades — pago único</span>
         </div>
       </div>
     </div>
