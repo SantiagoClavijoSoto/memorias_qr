@@ -110,8 +110,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => (
           <span className="text-sm text-white/85">tipos de perfil disponibles</span>
         </div>
         <div className="flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur px-5 py-4 text-white">
-          <span className="text-2xl font-bold text-accent">∞</span>
-          <span className="text-sm text-white/85">fotos, videos y música sin límite</span>
+          <span className="text-2xl font-bold text-accent">✦</span>
+          <span className="text-sm text-white/85">fotos, videos y música</span>
         </div>
         <div className="flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur px-5 py-4 text-white">
           <span className="text-2xl font-bold text-accent">0</span>
