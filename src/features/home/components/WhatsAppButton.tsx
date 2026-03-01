@@ -53,7 +53,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
       </Button>
 
       {open && (
-        <div className="absolute left-0 top-full mt-2 z-50 min-w-[220px] rounded-xl border border-border/70 bg-white shadow-xl overflow-hidden animate-fade-in">
+        <div className="absolute left-0 bottom-full mb-2 z-[100] min-w-[220px] rounded-xl border border-border/70 bg-white shadow-2xl overflow-hidden animate-fade-in">
           {advisors.map((advisor) => (
             <a
               key={advisor.phone}
